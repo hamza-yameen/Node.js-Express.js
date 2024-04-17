@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+
+# Generated files
+dist/
+build/
+*.log
+
+# macOS
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
