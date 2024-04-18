@@ -1,3 +1,6 @@
+# Simple Authentication with Node.js, Express.js, Prisma ORM, and MySQL
+This project demonstrates a simple authentication system built using Node.js, Express.js, Prisma ORM, MySQL, and JWT Token. It provides a solid foundation for building secure and scalable RESTful APIs.
+
 ## Resgister User
 
 curl --location 'http://localhost:8000/api/auth/register' \
