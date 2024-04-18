@@ -33,7 +33,10 @@ npx prisma migrate dev --name init
 npm start
 ```
 
-## Register User
+## Making API Requests with cURL
+This section provides examples using the curl command-line tool to interact with the API endpoints defined in this project.
+
+** Register User
 
 ```bash
 curl --location 'http://localhost:8000/api/auth/register' \
@@ -45,7 +48,7 @@ curl --location 'http://localhost:8000/api/auth/register' \
 }'
 ```
 
-## Login User
+** Login User
 
 ```bash
 curl --location 'http://localhost:8000/api/auth/login' \
@@ -56,14 +59,14 @@ curl --location 'http://localhost:8000/api/auth/login' \
 }'
 ```
 
-## Get All User
+** Get All User
 
 ```bash
 curl --location 'http://localhost:8000/api/user' \
 --header 'Authorization: Bearer Token'
 ```
 
-## Delete All User
+** Delete All User
 ```bash
 curl --location --request DELETE 'http://localhost:8000/api/user/all' \
 --header 'Authorization: Bearer Token'
