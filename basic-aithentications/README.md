@@ -1,8 +1,9 @@
 # Simple Authentication with Node.js, Express.js, Prisma ORM, and MySQL
-This project demonstrates a simple authentication system built using Node.js, Express.js, Prisma ORM, MySQL, and JWT Token. It provides a solid foundation for building secure and scalable RESTful APIs.
+With this repo, you'll be able to see how the node.js/express.js project should be structured. This is a very basic authentication method using a JWT token. How to handle error messages.
 
 
 ## Register User
+
 ```bash
 curl --location 'http://localhost:8000/api/auth/register' \
 --header 'Content-Type: application/json' \
@@ -14,6 +15,7 @@ curl --location 'http://localhost:8000/api/auth/register' \
 ```
 
 ## Login User
+
 ```bash
 curl --location 'http://localhost:8000/api/auth/login' \
 --header 'Content-Type: application/json' \
@@ -24,6 +26,7 @@ curl --location 'http://localhost:8000/api/auth/login' \
 ```
 
 ## Get All User
+
 ```bash
 curl --location 'http://localhost:8000/api/user' \
 --header 'Authorization: Bearer Token'
