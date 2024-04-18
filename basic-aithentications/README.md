@@ -1,6 +1,26 @@
 # Simple Authentication with Node.js, Express.js, Prisma ORM, and MySQL
 With this repo, you'll be able to see how the node.js/express.js project should be structured. This is a very basic authentication method using a JWT token. How to handle error messages.
 
+## Installation
+1. Clone this repository.
+2. Navigate to the project directory
+```bash
+cd your-project-name
+```
+3. Install the required dependencies
+```bash
+npm install
+```
+
+## Environment Variables
+Create a file named .env in the project root directory.
+Add the following environment variables to the .env file, replacing the placeholders with your actual values
+```bash
+DATABASE_URL=mysql://user:password@host:port/database_name
+```
+```bash
+DATABASE_URL=
+```
 
 ## Register User
 
