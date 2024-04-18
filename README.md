@@ -8,20 +8,20 @@ Let me know if you've found any other best practices that are better than mine. 
 
 ## Key Features
 
-### User Authentication
-### Error Handling
-### Folder Structure
+1. User Authentication
+2. Error Handling
+3. Folder Structure
 
 ## What you'll learn:
 
-### Understanding Node.js and Express.js:
+1. ### Understanding Node.js and Express.js:
 This project teaches you how to build APIs with Node.js and Express.js. Creating routes, controllers, handling HTTP requests, and managing middleware will be covered.
 
-### Prisma ORM with MySQL:
+2. ### Prisma ORM with MySQL:
 With Prisma, you'll learn how to interact with databases. With Prisma, you can define data models and perform CRUD operations quickly.
 
-### JWT Authentication:
+3. ### JWT Authentication:
 Implementing JWT-based authentication will give you a common authentication mechanism for API endpoints. User sessions and authorization can be managed securely with JWTs.
 
-### Error Handling Best Practices:
+4. ### Error Handling Best Practices:
 Make sure you catch and handle errors gracefully. It prevents crashes and gives users meaningful feedback.
