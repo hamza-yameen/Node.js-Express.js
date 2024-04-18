@@ -3,7 +3,6 @@ This project demonstrates a simple authentication system built using Node.js, Ex
 
 
 ## Register User
-
 ```bash
 curl --location 'http://localhost:8000/api/auth/register' \
 --header 'Content-Type: application/json' \
@@ -15,7 +14,6 @@ curl --location 'http://localhost:8000/api/auth/register' \
 ```
 
 ## Login User
-
 ```bash
 curl --location 'http://localhost:8000/api/auth/login' \
 --header 'Content-Type: application/json' \
@@ -26,7 +24,6 @@ curl --location 'http://localhost:8000/api/auth/login' \
 ```
 
 ## Get All User
-
 ```bash
 curl --location 'http://localhost:8000/api/user' \
 --header 'Authorization: Bearer Token'
