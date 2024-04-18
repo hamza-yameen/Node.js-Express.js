@@ -2,10 +2,9 @@
 This project demonstrates a simple authentication system built using Node.js, Express.js, Prisma ORM, MySQL, and JWT Token. It provides a solid foundation for building secure and scalable RESTful APIs.
 
 
+## Register User
 
 ```bash
-Resgister
-
 curl --location 'http://localhost:8000/api/auth/register' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -17,19 +16,24 @@ curl --location 'http://localhost:8000/api/auth/register' \
 
 ## Login User
 
+```bash
 curl --location 'http://localhost:8000/api/auth/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "email" : "email@gmail.com",
 "password" : "user-name"
 }'
+```
 
 ## Get All User
 
+```bash
 curl --location 'http://localhost:8000/api/user' \
 --header 'Authorization: Bearer Token'
+```
 
 ## Delete All User
-
+```bash
 curl --location --request DELETE 'http://localhost:8000/api/user/all' \
 --header 'Authorization: Bearer Token'
+```
