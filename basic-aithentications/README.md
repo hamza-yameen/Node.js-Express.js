@@ -19,7 +19,7 @@ Add the following environment variables to the .env file, replacing the placehol
 DATABASE_URL=mysql://user:password@host:port/database_name
 ```
 ```bash
-JWT_SECRET="KEY"
+JWT_SECRET=JWT_SECRET_KEY
 ```
 ## Connecting to the Database
 The code uses Prisma to establish a connection to your MySQL database.
