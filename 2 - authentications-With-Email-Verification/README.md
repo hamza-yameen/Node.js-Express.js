@@ -72,6 +72,13 @@ curl --location 'http://localhost:8000/api/auth/login' \
 }'
 ```
 
+- User Activation
+**Note:** You got the email of the verification code after signup the process, I'd like to remind you that the code has expired after one hour.
+```bash
+curl --location 'http://localhost:8000/api/auth/verification?code=45672' \
+--header 'Authorization: Bearer Token'
+```
+
 - Get All User
 
 ```bash
