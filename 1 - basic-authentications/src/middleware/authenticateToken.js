@@ -1,5 +1,8 @@
 const ResponseMessages = require("../utils/responseMessages");
-const { UnAuthorizedException } = require("../utils/httpExceptionSchema");
+const {
+	UnAuthorizedException,
+	ForbiddenException,
+} = require("../utils/httpExceptionSchema");
 const userService = require("../services/userService");
 const { verifyJWT } = require("../libs/jwt");
 
@@ -13,8 +16,10 @@ exports.authenticateToken = async (req, res, next) => {
 	}
 
 	const { payload, expired } = await verifyJWT(token);
-	if (expired)
-		return next(new ForbiddenException(ResponseMessages.TOKEN_EXPIRED));
+	if (expired) {
+		const error = new ForbiddenException(ResponseMessages.TOKEN_EXPIRED);
+		return next(error);
+	}
 
 	const getUserById = await userService.getUserById(payload.userId);
 	if (!getUserById) {

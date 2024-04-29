@@ -107,7 +107,6 @@ signIn = async (req, res, next) => {
 		email: user.email,
 		token: token,
 		createdAt: user.createdAt,
-		token: token,
 	};
 
 	return res.status(200).json(responseHandler(200, data));

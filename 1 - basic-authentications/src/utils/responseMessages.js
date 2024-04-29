@@ -13,6 +13,12 @@ const ResponseMessages = {
 	AUTHORIZATION_FAILED: "Authorization Failed",
 	INVALID_INPUTS_PLEASE_CHECK_YOUR_DATA:
 		"Invalid inputs passed, please check your data.",
+	SOMETHING_WENT_WRONG_CODE_CREATED_PROCESS:
+		"Something went wrong please login and activate your account",
+	INVALID_ACTIVATION_CODE: "Invalid activation code",
+	ACTIVATION_CODE_HAS_EXPIRED_PLEASE_TRY_AGAIN:
+		"Activation code has expired. Please try again.",
+	TOKEN_EXPIRED: "Token has been expired.",
 };
 
 module.exports = ResponseMessages;
