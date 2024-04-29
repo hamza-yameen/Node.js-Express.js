@@ -1,4 +1,4 @@
-# Simple Authentication with Node.js, Express.js, Prisma ORM, and MySQL
+# Authentication with Node.js, Express.js, Prisma ORM, Twilio SendGrid, and MySQL
 
 With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication system using JWT tokens and Twilio SendGrid.
 
