@@ -1,6 +1,26 @@
 # Simple Authentication with Node.js, Express.js, Prisma ORM, and MySQL
 
-With this repo, you'll be able to see how the node.js/express.js project should be structured. This is a very basic authentication method using a JWT token. How to handle error messages.
+With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication system using JWT tokens and Twilio SendGrid.
+
+## What you'll learn:
+
+1. ### Error Handling:
+   Learn robust techniques for managing errors and providing informative messages to the user
+
+2. ### Response Management:
+   Discover methods for crafting clear and consistent API responses, potentially using a generic method for efficient code.
+
+3. ### JWT Authentication:
+   Implementing JWT-based authentication will give you a common authentication mechanism for API endpoints. User sessions and authorization 
+   can be managed securely with JWTs.
+
+4. ### User Activation System with Database:
+   Implement a secure user activation system that leverages a database to store user information and activation status.
+
+5. ### Email Verifications with Twilio SendGrid:
+   Explore techniques for sending activation emails or other notifications using a service like Twilio SendGrid (consider adding this 
+   detail if sending emails is a core feature)
+
 
 ## Making API Requests with cURL
 
