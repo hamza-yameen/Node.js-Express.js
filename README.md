@@ -28,3 +28,39 @@ It comes without structure so developers face many difficulties and are confused
 
 5. ### Email Verifications with Twilio SendGrid:
    Implementation of Twilio SendGrid in node application, Sending Activation Emails, and User Activation Management
+
+
+## Installation
+
+1. Clone this repository.
+2. Navigate to the projects directory
+
+```bash
+cd your-project-name
+```
+
+3. Install the required dependencies
+
+```bash
+npm install
+```
+
+## Environment Variables
+
+Create a file named .env in the project root directory.
+Add the following environment variables to the .env file, replacing the placeholders with your actual values.
+
+## Connecting to the Database
+
+The code uses Prisma to establish a connection to your MySQL database.
+In your terminal, run the following command to apply initial migrations
+
+```bash
+npx prisma migrate dev --name init
+```
+
+## Running the Application
+
+```bash
+npm start
+```
