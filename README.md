@@ -29,12 +29,6 @@ It comes without structure so developers face many difficulties and are confused
 5. ### Email Verifications with Twilio SendGrid:
    Implementation of Twilio SendGrid in node application, Sending Activation Emails, and User Activation Management
 
-## Run Seed Command
-
-Open your terminal and navigate to the project directory.
-```bash
-npm run seed
-```
 
 ## Installation
 
@@ -63,6 +57,13 @@ In your terminal, run the following command to apply initial migrations
 
 ```bash
 npx prisma migrate dev --name init
+```
+
+## Run Seed Command
+
+Open your terminal and navigate to the project directory.
+```bash
+npm run seed
 ```
 
 ## Running the Application
