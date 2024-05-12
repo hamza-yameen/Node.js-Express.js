@@ -1,6 +1,6 @@
-# Authentication with Node.js, Express.js, Prisma ORM, Twilio SendGrid, and MySQL
+# Authentication and Authorization with Roles using Node.js, Express.js, Prisma ORM, Twilio SendGrid, and MySQL
 
-With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication system using JWT tokens and Twilio SendGrid.
+With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication and authorization system using JWT tokens and Twilio SendGrid.
 
 ## What you'll learn:
 
@@ -10,7 +10,7 @@ With this repo, you'll be able to see how the node.js/express.js project should 
 2. ### Response Management:
    Discover methods for crafting clear and consistent API responses, potentially using a generic method for efficient code.
 
-3. ### JWT Authentication:
+3. ### JWT Authentication & Authentication With Roles:
    Implementing JWT-based authentication will give you a common authentication mechanism for API endpoints. User sessions and authorization 
    can be managed securely with JWTs.
 
