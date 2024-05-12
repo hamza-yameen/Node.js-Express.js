@@ -21,6 +21,12 @@ With this repo, you'll be able to see how the node.js/express.js project should 
    Explore techniques for sending activation emails or other notifications using a service like Twilio SendGrid (consider adding this 
    detail if sending emails is a core feature)
 
+## Run Seed Command
+
+Open your terminal and navigate to the project directory.
+```bash
+npm run seed
+```
 
 ## Making API Requests with cURL
 
@@ -38,6 +44,13 @@ curl --location 'http://localhost:8000/api/auth/register' \
 }'
 ```
 
+- User Activation
+
+```bash
+curl --location 'http://localhost:8000/api/auth/verification?code=45672' \
+--header 'Authorization: Bearer Token'
+```
+
 - Login User
 
 ```bash
@@ -47,13 +60,6 @@ curl --location 'http://localhost:8000/api/auth/login' \
 "email" : "email@gmail.com",
 "password" : "user-name"
 }'
-```
-
-- User Activation
-
-```bash
-curl --location 'http://localhost:8000/api/auth/verification?code=45672' \
---header 'Authorization: Bearer Token'
 ```
 
 **Note:** You got the email of the verification code after signup the process, I'd like to remind you that the code has expired after one hour.
@@ -69,5 +75,18 @@ curl --location 'http://localhost:8000/api/user' \
 
 ```bash
 curl --location --request DELETE 'http://localhost:8000/api/user/all' \
+--header 'Authorization: Bearer Token'
+```
+
+- Get all users with role id
+
+```bash
+curl --location 'http://localhost:8000/api/user/withrolesid?roldId=${rold_id}' \
+--header 'Authorization: Bearer Token'
+```
+
+- Get all roles
+```bash
+curl --location 'http://localhost:8000/api/roles' \
 --header 'Authorization: Bearer Token'
 ```
