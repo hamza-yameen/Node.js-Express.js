@@ -1,6 +1,6 @@
-# Authentication and Authorization with Roles using Node.js, Express.js, Prisma ORM, Twilio SendGrid, and MySQL
+# Authentication and Authorization with Roles using Node.js, Express.js, Prisma ORM, Twilio SendGrid, Redis and MySQL
 
-With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication and authorization system using JWT tokens and Twilio SendGrid.
+With this repo, you'll be able to see how the node.js/express.js project should be structured. This is the authentication and authorization system using JWT tokens, Redis, and Twilio SendGrid.
 
 ## What you'll learn:
 
@@ -20,6 +20,9 @@ With this repo, you'll be able to see how the node.js/express.js project should 
 5. ### Email Verifications with Twilio SendGrid:
    Explore techniques for sending activation emails or other notifications using a service like Twilio SendGrid (consider adding this 
    detail if sending emails is a core feature)
+
+6. ### Redis:
+   Implementing Redis for caching, request limiting, and session management.
 
 ## Run Seed Command
 
