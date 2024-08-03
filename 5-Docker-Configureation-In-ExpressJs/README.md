@@ -29,6 +29,41 @@ With this repo, you'll be able to see how the node.js/express.js project should 
 6. ### Redis:
    Implementing Redis for caching, request limiting, and session management.
 
+7. ### Docker:
+Configuring Docker in a Node.js application, setting up PostgreSQL and Redis databases, and running the app through Docker.
+
+## Installation
+
+1. Clone this repository.
+
+2. Navigate to the projects directory
+
+```bash
+cd your-project-name
+```
+
+3. Environment Variables
+Create a file named .env in the project root directory.
+Add the following environment variables to the .env file, replacing the placeholders with your actual values
+
+4. Install the required dependencies
+
+```bash
+npm install
+```
+
+```bash
+docker-compose up --build
+```
+
+```bash
+docker-compose exec app npx prisma migrate dev --name init
+```
+
+```bash
+docker-compose exec app npx prisma generate
+```
+
 ## Run Seed Command
 
 Open your terminal and navigate to the project directory.
@@ -68,6 +103,16 @@ curl --location 'http://localhost:8000/api/auth/login' \
 --data-raw '{
 "email" : "email@gmail.com",
 "password" : "user-name"
+}'
+```
+
+- Reset Password
+
+```bash
+curl --location 'http://localhost:8000/api/auth/resetpassword' \
+--data-raw '{
+    "oldPassword" : "password1122@@",
+    "newPassword" : "password1122@"
 }'
 ```
 
