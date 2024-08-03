@@ -11,6 +11,8 @@ It comes without structure so developers face many difficulties and are confused
 2. Error Handling
 3. Folder Structure
 4. Email Verifications with Twilio SendGrid
+5. Implement caching with Redis
+6. Configure Docker
 
 ## What you'll learn:
 
