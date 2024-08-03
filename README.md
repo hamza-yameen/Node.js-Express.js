@@ -19,7 +19,7 @@ It comes without structure so developers face many difficulties and are confused
 1. ### Understanding Node.js and Express.js:
    This project teaches you how to build APIs with Node.js and Express.js. Creating routes, controllers, handling HTTP requests, and managing middleware will be covered.
 
-2. ### Prisma ORM with MySQL:
+2. ### Prisma ORM with Postgresql:
    With Prisma, you'll learn how to interact with databases. With Prisma, you can define data models and perform CRUD operations quickly.
 
 3. ### JWT Authentication:
@@ -30,6 +30,9 @@ It comes without structure so developers face many difficulties and are confused
 
 5. ### Email Verifications with Twilio SendGrid:
    Implementation of Twilio SendGrid in node application, Sending Activation Emails, and User Activation Management
+
+5. ### Implement caching with Redis:
+   Implementation of Cache using Redis in node application.
 
 
 ## Installation
