@@ -139,29 +139,33 @@ The application consists of 5 main modules: User, Booking, Merchant, Review, and
 
 ### 1. User Module
 This module handles user registration, login, and profile management. Authentication is managed using JWT tokens.
-
-* POST /users/register: Register a new user.
-* POST /users/login: Authenticate and log in a user.
-* GET /users/profile: Get the logged-in user's profile (requires authentication).
+* POST /user/register:    Register a new user.
+* POST /user/login:       Authenticate and log in as a user.
+* GET /user/profile:      Get the logged-in user's profile (requires authentication).
 
 ### 2. Booking Module
 This module manages booking operations for users and merchants.
-* POST /bookings: Create a new booking.
-* GET /bookings/ : Get booking details by ID.
-* PATCH /bookings/ /status: Update the status of a booking.
+* POST /bookings/add:           Create a new booking.
+* GET /bookings/all:            Get All bookings detail.
+* GET /bookings/:id:            Get booking details by ID.
+* PATCH /bookings/:id/status:   Update the status of a booking.
 
 ### 3. Merchant Module
 This module manages merchants and their details.
-* POST /merchants: Register a new merchant.
-* GET /merchants/ : Get merchant details by ID.
+* POST /merchant/add:       Register a new merchant.
+* GET /merchant/find/:id:   Get merchant details by ID.
+* GET /merchant:            Get all merchant details.
+* Patch /merchant/:id:      Update merchant details.
+* Delete /merchant/:id:     Delete merchant details.
 
 ### 4. Review Module
 This module allows users to leave reviews for their bookings.
-* POST /reviews: Submit a review for a booking.
-* GET /reviews/ : Get a specific review by ID.
+* POST /reviews/add:                   Submit a review for a booking.
+* GET /reviews/user:                   Get reviews by user ID.
+* GET /reviews/merchant/:merchantId:   Get reviews by merchant ID.
 
 ### 5. Payment Module
 This module manages payments for bookings.
-POST /payments: Process a payment for a booking.
-GET /payments/
-: Get payment details by ID.
+* POST /payment/scan:            Process a payment for a booking.
+* GET /payments/bookingId:       Get payment details by booing ID.
+
